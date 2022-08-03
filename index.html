@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+            <h1>CALCULADORA</h1>
+        <form action="" name="Calculator">
+            <input type="text" class="inserir" name="text1" disabled>
+            <input type="button" class="delete" name="text2" value="AC" onclick="location.reload()"><br>
+
+            <input type="button" class="numeros" name="b7" value="7" onclick="displaynum(b7.value)">
+            <input type="button" class="numeros" name="b8" value="8" onclick="displaynum(b8.value)">
+            <input type="button" class="numeros" name="b9" value="9" onclick="displaynum(b9.value)">
+            <input type="button" class="opera" name="multi" value="*" onclick="displaynum(multi.value)"><br>
+
+            <input type="button" class="numeros" name="b4" value="4" onclick="displaynum(b4.value)">
+            <input type="button" class="numeros" name="b5" value="5" onclick="displaynum(b5.value)">
+            <input type="button" class="numeros" name="b6" value="6" onclick="displaynum(b6.value)">
+            <input type="button" class="opera" name="subt" value="-" onclick="displaynum(subt.value)"><br>
+
+            <input type="button" class="numeros" name="b1" value="1" onclick="displaynum(b1.value)">
+            <input type="button" class="numeros" name="b2" value="2" onclick="displaynum(b2.value)">
+            <input type="button" class="numeros" name="b3" value="3" onclick="displaynum(b3.value)">
+            <input type="button" class="opera" name="add" value="+" onclick="displaynum(add.value)"><br>
+            
+            <input type="button" class="numeros" name="b0" value="0" onclick="displaynum(b0.value)">
+            <input type="button" class="numeros" name="virg" value="." onclick="displaynum(virg.value)">
+            <input type="button" class="opera" name="result" value="=" onclick="text1.value=eval(text1.value)">
+            <input type="button" class="opera" name="divisao" value="/" onclick="displaynum(divisao.value)"><br>
+        </form>
+    </main>
+    <footer>
+        
+        Copyright 2022 ©| Caroline Ayasha
+    </footer>
+</body>
+</html>
